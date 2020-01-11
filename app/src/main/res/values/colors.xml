@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d80457b6</color>
+    <color name="colorPrimaryDark">#da012d5b</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue_grey_800_50p">#e233c5ff</color>
+    <color name="White">#ffffff</color>
+    <color name="chouchou">#f2ff338f</color>
+    <color name="chai">#28ff5da6</color>
+    <color name="chai2">#8eff5da6</color>
+    <color name="chai3">#e2ff5da6</color>
+</resources>

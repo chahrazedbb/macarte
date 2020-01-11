@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/comic_image"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/home"/>
+
+    <TextView
+        android:id="@+id/titre"
+        style="@style/TextAppearance.AppCompat.Subhead.Inverse"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_gravity="bottom"
+        android:background="@color/blue_grey_800_50p"
+        tools:text="LOL Guy"/>
+
+</FrameLayout>

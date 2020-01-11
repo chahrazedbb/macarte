@@ -1,0 +1,182 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:background="@color/White">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageView" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RatingBar
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar2" />
+
+            <Button
+                android:text="evaluer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voter"
+                android:background="@color/White"
+                android:onClick="voter"
+                android:textColor="@color/chouchou"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Titre:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/t1"
+            android:textSize="25dp"
+            android:textColor="@color/blue_grey_800_50p"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titre"
+            android:textSize="20dp"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:text="Type:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/t2"
+            android:textSize="25dp"
+            android:textColor="@color/blue_grey_800_50p"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/type"
+            android:textSize="20dp"
+            android:layout_margin="20dp"/>
+
+
+        <TextView
+            android:text="Description:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/t3"
+            android:textSize="25dp"
+            android:textColor="@color/blue_grey_800_50p"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:textSize="20dp"
+            android:layout_margin="20dp"/>
+
+
+        <TextView
+            android:text="Adresse:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/t4"
+            android:textSize="25dp"
+            android:textColor="@color/blue_grey_800_50p"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adresse"
+            android:textSize="20dp"
+            android:layout_margin="20dp"/>
+
+
+        <TextView
+            android:text="Telephone:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/t5"
+            android:textSize="25dp"
+            android:textColor="@color/blue_grey_800_50p"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/telephone"
+                android:textSize="20dp"
+                android:layout_margin="20dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:src="@drawable/phone"
+                android:id="@+id/phone"
+                android:layout_weight="0.44"
+                android:backgroundTint="@color/White"
+                android:onClick="telephoner" />
+        </LinearLayout>
+        <TextView
+            android:text="Email:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/t6"
+            android:textSize="25dp"
+            android:textColor="@color/blue_grey_800_50p"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:layout_margin="20dp"
+                android:textSize="20dp"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:src="@drawable/ic_send_black_24dp"
+                android:id="@+id/mail"
+                android:layout_weight="0.44"
+                android:backgroundTint="@color/White"
+                android:onClick="send" />
+        </LinearLayout>
+
+        <com.github.rtoshiro.view.video.FullscreenVideoLayout
+            android:id="@+id/videoview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+    </LinearLayout>
+</ScrollView>

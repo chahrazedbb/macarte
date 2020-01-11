@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/White">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:hint="Sujet"
+        android:inputType="text"
+        android:id="@+id/subject"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.22"
+        android:layout_margin="10dp"
+        android:background="@color/chai3"
+        android:textColorHint="@color/White"/>
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_weight="0.19"
+        android:layout_margin="10dp"
+        android:background="@color/chai2"
+        android:textColorHint="@color/White"/>
+
+
+    <EditText
+        android:background="@color/chai"
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignEnd="@+id/email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/email"
+        android:gravity="top"
+        android:hint="Votre Message "
+        android:inputType="textMultiLine"
+        android:layout_weight="0.51"
+        android:layout_margin="10dp"
+/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/send"
+        android:id="@+id/imb"
+        android:backgroundTint="@color/White" />
+
+</LinearLayout>
